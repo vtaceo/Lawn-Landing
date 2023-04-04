@@ -1,0 +1,1403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(131, 126, 117);
+    font-family: 'Poppins', sans-serif;
+}
+
+/*  NAV */
+/* 
+.nav {
+    background-color: rgb(210, 243, 63);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+} */
+
+.logo {}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(0, 105, 0);
+    font-weight: 700;
+    font-family: 'Tilt Warp';
+    font-size: 42px;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(0, 105, 0);
+    font-weight: bold;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.links ul li {
+    margin: 0 30px 0 0;
+    border-bottom: 2px solid transparent;
+}
+
+.links ul li:hover {
+    border-bottom: 2px solid rgb(0, 105, 0);
+}
+
+.links button a {
+    color: rgb(210, 243, 63);
+}
+
+.links button {
+    padding: 10px;
+    border: none;
+}
+
+
+nav {
+    position: relative;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: 'Montserrat', 'sans-serif';
+    height: 100px;
+    background-color: rgb(210, 243, 63);
+    padding: 40px 200px;
+}
+
+nav .logo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: rgb(0, 105, 0);
+}
+
+nav .links {
+    /* background-color: orange; */
+    /* float: right; */
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav .links li {
+    list-style: none;
+    margin: 0 30px 0 0;
+    border-bottom: 2px solid transparent;
+}
+
+nav .links li:hover {
+    list-style: none;
+    margin: 0 30px 0 0;
+    color: white;
+    transition: all 0.3s ease-in-out 0s;
+    /* border-bottom: 2px solid green; */
+}
+
+nav .links a {
+    display: block;
+    /* padding: 1em; */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+
+}
+
+nav .links a:hover {
+    color: rgb(105, 181, 105);
+    font-weight: bolder;
+}
+
+nav .links a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 2px;
+    background-color: white; */
+    visibility: hidden;
+    /* transform: scaleX(0); */
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* nav .links a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    color: white;
+} */
+
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+
+/* LANDING */
+
+.landing {
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(0, 0, 0, .6);
+    padding: 100px 200px;
+
+    color: white;
+    /* height: 70vh; */
+
+}
+
+.hero {
+    /* background-color: rgb(38, 148, 148, .3); */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.text button {
+    color: rgb(0, 105, 0);
+    background-color: rgb(210, 243, 63);
+    border: none;
+    padding: 10px;
+    height: 50px;
+    width: 280px;
+    font-size: 18px;
+}
+
+
+.text button:hover {
+    background-color: rgb(177, 206, 52);
+}
+
+.text {
+    width: 65%;
+    padding: 50px 0 0 0;
+}
+
+.text h1 {
+    font-size: 68px;
+    width: 90%;
+}
+
+.landing .quote-form {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 35%;
+    padding: 50px;
+    color: black;
+}
+
+.landing .quote-form h2 {
+    color: rgb(0, 105, 0);
+    font-size: 50px;
+    width: 100%;
+}
+
+.landing .quote-form p {
+    font-size: 18px;
+}
+
+.landing .quote-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing .quote-form input {
+    margin-top: 10px;
+    padding: 5px 2px;
+}
+
+.landing .quote-form button {
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(0, 105, 0);
+    color: rgb(210, 243, 63);
+    transition: ease-in .2s;
+}
+
+.landing .quote-form button:hover {
+    background-color: rgb(0, 78, 0);
+}
+
+button {
+    font-weight: bold;
+    background-color: rgb(0, 105, 0);
+    color: rgb(210, 243, 63);
+    transition: ease-in .2s;
+}
+
+button:hover {
+    background-color: rgb(0, 78, 0);
+}
+
+
+/* HERO 2 - HOW WE CARE */
+
+.how-we-care {
+    background-color: rgb(210, 243, 63);
+    /* height: 70vh; */
+    padding: 10vh 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-we-care .inner-text {
+    /* background-color: orange; */
+    text-align: center;
+
+}
+
+.how-we-care .inner-text h1 {
+    color: rgb(0, 105, 0);
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.how-we-care .inner-text p {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.how-we-care .our-services {
+    display: flex;
+    padding-top: 50px;
+    height: auto;
+    /* background-color: teal; */
+}
+
+.how-we-care .our-services .service {
+    /* background-color: orangered; */
+    padding: 25px;
+}
+
+.how-we-care .our-services .service h3 {
+    text-align: center;
+    padding: 30px 0 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 105, 0);
+
+}
+
+.how-we-care .our-services .service p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.how-we-care .our-services .service .image {
+    /* background-color: gold; */
+    display: flex;
+    justify-content: center;
+}
+
+.how-we-care .our-services .service img {
+    width: 80px;
+}
+
+/* HERO 3 - HISTORY  */
+
+.history-landing {
+    background-color: white;
+    padding: 15vh 200px;
+}
+
+.history-landing-text {
+    /* background-color: orange; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history-landing-text h1 {
+    font-size: 48px;
+    color: rgb(0, 105, 0);
+}
+
+.history-landing-text p {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.history-landing-text button {
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    height: 50px;
+    width: 280px;
+    font-size: 18px;
+}
+
+/* hero 4 - CONSULTATION */
+
+.consultation {
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(0, 0, 0, .7);
+    padding: 25vh 200px;
+}
+
+.consultation .consultation-text {
+    /* background-color: rgb(251, 251, 251, 0.4); */
+    text-align: center;
+    color: white;
+}
+
+.consultation .consultation-text h1 {
+    font-size: 40px;
+}
+
+.consultation .consultation-text p {
+    padding: 20px 0 25px 0;
+    font-size: 18px;
+}
+
+.consultation .consultation-text button {
+    color: rgb(0, 105, 0);
+    background-color: rgb(210, 243, 63);
+    border: none;
+    padding: 10px 0;
+    width: 320px;
+    font-size: 18px;
+}
+
+
+.consultation .consultation-text button:hover {
+    background-color: rgb(177, 206, 52);
+}
+
+
+.consultation-contact {
+    background-image: url(img/bg-about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(0, 0, 0, .6);
+    padding: 25vh 200px;
+}
+
+.consultation-contact .consultation-text {
+    /* background-color: rgb(251, 251, 251, 0.4); */
+    text-align: center;
+    color: white;
+}
+
+.consultation-contact .consultation-text h1 {
+    font-size: 40px;
+}
+
+.consultation-contact .consultation-text p {
+    padding: 20px 0 25px 0;
+    font-size: 18px;
+}
+
+.consultation-contact .consultation-text button {
+    color: rgb(0, 105, 0);
+    background-color: rgb(210, 243, 63);
+    border: none;
+    padding: 10px 0;
+    height: 40px;
+    width: 320px;
+    font-size: 18px;
+}
+
+.consultation-contact .consultation-text button:hover {
+    background-color: rgb(177, 206, 52);
+}
+
+
+
+
+
+/* HEADER */
+.headers {
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(0, 0, 0, .6);
+    padding: 12vh 200px;
+    font-size: 30px;
+}
+
+
+.contact-header {
+    background-image: url(img/bg.jpg);
+    color: white;
+    text-align: center;
+    /* padding: 25vh 200px; */
+}
+
+
+
+/* CONTACT FORM */
+
+.contact-form {
+    background-color: white;
+}
+
+.contact-inner {
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh;
+}
+
+.contact-inner .contact-text {
+    /* background-color: teal; */
+    text-align: center;
+    width: 40vw;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+
+.contact-inner .form form {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.contact-inner input {
+    /* background-color: palegoldenrod; */
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+
+.contact-inner textarea {
+    resize: none;
+}
+
+.contact-inner button {
+    margin-top: 15px;
+    border: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* ABOUT */
+
+.about-header {
+    background-image: url(img/bg-about.jpg);
+    color: white;
+    text-align: center;
+}
+
+.about {
+    background-color: white;
+    padding: 0vh 300px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+    font-size: 18px;
+}
+
+
+.workers {
+    padding: 0vh 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.worker {
+    display: flex;
+    /* background-color: rgb(255, 168, 7, 0.15); */
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.worker .portrait {
+    padding-right: 50px;
+}
+
+.worker img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+}
+
+.worker .bio h1 {
+    color: rgb(0, 105, 0);
+    font-size: 48px;
+    padding-bottom: 15px;
+}
+
+.worker .bio p {
+    font-size: 18px;
+}
+
+
+.schedule-about {
+    background-color: rgb(210, 243, 63);
+    /* background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(0, 0, 0, .6); */
+    padding: 15vh 200px;
+}
+
+.schedule-about {
+    /* background-color: rgb(251, 251, 251, 0.4); */
+    text-align: center;
+    color: rgb(0, 105, 0);
+}
+
+.schedule-about h1 {
+    font-size: 46px;
+    padding-bottom: 10px;
+}
+
+.schedule-about p {
+    padding: 20px 0 25px 0;
+    font-size: 18px;
+}
+
+.schedule-about button {
+    color: rgb(210, 243, 63);
+    background-color: rgb(0, 105, 0);
+    border: none;
+    padding: 10px 0;
+    height: 40px;
+    width: 320px;
+    font-size: 18px;
+}
+
+.schedule-about button:hover {
+    background-color: rgb(177, 206, 52);
+}
+
+/* SERVICES */
+
+.services-header {
+    background-image: url(img/bg-about.jpg);
+    color: white;
+    text-align: center;
+}
+
+.all-services {
+    background-color: white;
+    /* background-color: orange; */
+}
+
+.our-services {
+    display: flex;
+    gap: 50px;
+    padding: 100px 100px;
+}
+
+.service {
+    text-align: center;
+}
+
+.service h3 {
+    color: rgb(0, 105, 0);
+}
+
+.service img {
+    width: 80px;
+}
+
+.our-promise {
+    background-image: url(img/bg-services.jpg);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+}
+
+.our-promise .text {
+    background-color: rgb(210, 243, 63);
+    padding: 40px 40px 50px 40px;
+    color: rgb(0, 105, 0);
+}
+
+.our-promise .text h1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.service-schedule {
+    padding: 18vh 200px;
+    background-color: white;
+}
+
+.service-schedule {
+    /* background-color: rgb(251, 251, 251, 0.4); */
+    text-align: center;
+    color: rgb(0, 105, 0);
+}
+
+.service-schedule h1 {
+    font-size: 46px;
+    padding-bottom: 15px;
+}
+
+.service-schedule p {
+    padding: 20px 0 25px 0;
+    font-size: 18px;
+}
+
+.service-schedule button {
+    color: rgb(210, 243, 63);
+    background-color: rgb(0, 105, 0);
+    border: none;
+    padding: 15px;
+    font-weight: bolder;
+    /* height: 40px; */
+    /* width: 320px; */
+    font-size: 18px;
+}
+
+.service-schedule button:hover {
+    background-color: rgb(177, 206, 52);
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(0, 105, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    color: white;
+}
+
+.footer img {
+    width: 30px;
+}
+
+.footer .socials ul {
+    /* background-color: firebrick; */
+    display: flex;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+
+.footer .socials ul li {
+    padding: 0px 20px;
+}
+
+
+/* MEDIA QUERIES */
+
+/* index */
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1400px) {
+    .text {
+        width: 60%;
+    }
+
+    .landing .quote-form {
+        width: 40%;
+    }
+
+    .history-landing-text {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .text {
+        width: 55%;
+    }
+
+    .text h1 {
+        font-size: 48px;
+        width: 60%;
+    }
+
+    .text button {
+        height: 40px;
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .landing .quote-form {
+        width: 45%;
+    }
+
+    .landing .quote-form h2 {
+        color: green;
+        font-size: 38px;
+        width: 100%;
+    }
+
+    .landing .quote-form p {
+        font-size: 16px;
+    }
+
+    .history-landing-text {
+        width: 70%;
+    }
+
+    .about {
+        padding: 0vh 100px;
+    }
+
+    .about-text {
+        padding: 10vh 15vh;
+    }
+
+    .workers {
+        padding: 0vh 15vh;
+    }
+
+    .contact-inner .contact-text {
+        width: 50vw;
+    }
+
+    .contact-inner .form form {
+        width: 50vw;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    .text {
+        width: 60%;
+    }
+
+    .landing .quote-form {
+        width: 40%;
+        padding: 30px;
+        font-size: 26px;
+    }
+
+    .landing {
+        height: auto;
+    }
+
+    nav,
+    .landing {
+        padding: 40px 100px;
+    }
+
+    .how-we-care {
+        padding: 10vh 100px;
+    }
+
+    .history-landing {
+        padding: 15vh 100px;
+    }
+
+    .history-landing-text h1 {
+        font-size: 34px;
+    }
+
+    .history-landing-text p {
+        font-size: 16px;
+    }
+
+    .history-landing-text {
+        width: 70%;
+    }
+
+    .history-landing-text button {
+        margin-top: 10px;
+        border: none;
+        padding: 10px;
+        height: 40px;
+        width: 250px;
+        font-size: 18px;
+    }
+
+    .landing .quote-form {
+        width: 45%;
+    }
+
+    .landing .quote-form h2 {
+        color: green;
+        font-size: 38px;
+        width: 100%;
+    }
+
+    .landing .quote-form p {
+        font-size: 16px;
+    }
+
+    .history-landing-text {
+        width: 70%;
+    }
+
+    .about {
+        padding: 0vh 0px;
+    }
+
+    .about-text {
+        padding: 10vh 15vh;
+        font-size: 16px;
+    }
+
+    .workers {
+        padding: 0vh 15vh;
+    }
+
+    .contact-inner .contact-text {
+        width: 50vw;
+    }
+
+    .contact-inner .form form {
+        width: 50vw;
+    }
+
+
+    .worker img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        /* border-radius: 50%; */
+    }
+
+    .worker .bio h1 {
+        color: rgb(0, 105, 0);
+        font-size: 40px;
+        padding-bottom: 15px;
+    }
+
+    .worker .bio p {
+        font-size: 16px;
+    }
+
+    .service-schedule {
+        padding: 18vh 100px;
+        background-color: white;
+        text-align: center;
+        color: rgb(0, 105, 0);
+    }
+
+    .service-schedule h1 {
+        font-size: 46px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    .text h1 {
+        font-size: 48px;
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .landing .quote-form {
+        width: 100%;
+    }
+
+    .how-we-care .our-services {
+        flex-wrap: wrap;
+    }
+
+
+    .how-we-care {
+        padding: 10vh 50px 0px 50px;
+    }
+
+
+    .how-we-care .inner-text h1 {
+        color: rgb(0, 105, 0);
+        font-weight: bold;
+        font-size: 38px;
+    }
+
+    .how-we-care .inner-text p {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    .how-we-care .our-services .service {
+        padding: 0px 50px;
+    }
+
+    .history-landing {
+        background-color: white;
+        padding: 15vh 100px;
+    }
+
+    .history-landing-text {
+        width: 100%;
+    }
+
+    .consultation .consultation-text {
+        /* background-color: teal; */
+        padding: 50px 50px;
+    }
+
+    nav .logo {
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(255, 255, 255, 0.95);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .links a {
+        font-size: 20px;
+    }
+
+    nav :checked~.links {
+        bottom: 0;
+    }
+
+    nav .icon-burger {
+        display: block;
+    }
+
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+
+
+    .headers {
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: rgb(0, 0, 0, .6);
+        padding: 50px 100px;
+        font-size: 30px;
+    }
+
+    .contact-inner .contact-text {
+        /* background-color: teal; */
+        text-align: center;
+        width: 80vw;
+    }
+
+    .contact-inner .form form {
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .consultation-contact {
+        background-image: url(img/bg-about.jpg);
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: rgb(0, 0, 0, .6);
+        padding: 25vh 0px;
+    }
+
+    .consultation,
+    .consultation-contact .consultation-text {
+        padding: 20px;
+    }
+
+    .about-text {
+        padding: 12vh 15vh;
+        font-size: 16px;
+    }
+
+    .workers {
+        padding: 5vh 15vh;
+        /* display: block; */
+        flex-direction: column;
+    }
+
+    .worker {
+        /* text-align: center; */
+        display: block;
+        /* background-color: rgb(255, 168, 7, 0.15); */
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+
+    .worker img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        /* border-radius: 50%; */
+    }
+
+    .worker .bio {
+        padding-top: 10px;
+    }
+
+    .worker .bio h1 {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    .service-schedule {
+        padding: 18vh 50px;
+        background-color: white;
+        text-align: center;
+        color: rgb(0, 105, 0);
+    }
+
+    .service-schedule h1 {
+        font-size: 46px;
+        padding-bottom: 15px;
+    }
+
+    .schedule-about {
+        padding: 15vh 50px;
+    }
+
+
+    .schedule-about {
+        /* background-color: rgb(251, 251, 251, 0.4); */
+        text-align: center;
+        color: rgb(0, 105, 0);
+    }
+
+    .schedule-about h1 {
+        font-size: 46px;
+        padding-bottom: 10px;
+    }
+
+    .schedule-about p {
+        padding: 20px 0 25px 0;
+        font-size: 18px;
+    }
+
+    .services-header {
+        background-image: url(img/bg-about.jpg);
+        color: white;
+        text-align: center;
+    }
+
+    .all-services {
+        background-color: white;
+        /* background-color: orange; */
+    }
+
+    .our-services {
+        /* display: flex; */
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 15vh 100px;
+    }
+
+    .service {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .our-promise {
+        padding: 100px;
+    }
+
+    .our-promise .text {
+        padding: 20px 30px 35px 30px;
+    }
+
+    .our-promise .text h1 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .logo a {
+        font-size: 28px;
+    }
+
+    .landing {
+        padding: 0px 50px;
+    }
+
+    .text {
+        /* width: 100%; */
+        padding: 75px 0px;
+    }
+
+    .text h1 {
+        font-size: 38px;
+        word-wrap: normal;
+    }
+
+    .landing .quote-form {
+        width: 100%;
+        margin-bottom: 75px;
+    }
+
+    .how-we-care {
+        padding: 10vh 50px;
+    }
+
+
+    .how-we-care .our-services {
+        padding: 50px 0;
+    }
+
+    .how-we-care .our-services .service {
+        padding-bottom: 10px;
+    }
+
+    .how-we-care .our-services .service h3 {
+        text-align: center;
+        padding: 30px 0 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(0, 105, 0);
+
+    }
+
+    .how-we-care .our-services .service p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .history-landing {
+        background-color: white;
+        padding: 15vh 50px;
+    }
+
+
+    .consultation .consultation-text {
+        /* background-color: rgb(251, 251, 251, 0.4); */
+        text-align: center;
+        color: white;
+        padding: 50px 0px;
+    }
+
+    .headers {
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: rgb(0, 0, 0, .6);
+        padding: 50px 50px;
+        font-size: 30px;
+    }
+
+    .contact-inner .contact-text {
+        /* background-color: teal; */
+        text-align: center;
+        width: 80vw;
+    }
+
+    .contact-inner .form form {
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .consultation-contact {
+        background-image: url(img/bg-about.jpg);
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: rgb(0, 0, 0, .6);
+        padding: 25vh 0px;
+    }
+
+    .consultation,
+    .consultation-contact .consultation-text {
+        padding: 20px;
+    }
+
+    .about-text {
+        padding: 5vh 50px;
+        font-size: 16px;
+    }
+
+    .workers {
+        padding: 1vh 50px;
+    }
+
+    .worker {
+        /* text-align: center; */
+        display: block;
+        /* background-color: rgb(255, 168, 7, 0.15); */
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+
+    .worker img {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .worker .bio h1 {
+        font-size: 36px;
+        padding-bottom: 10px;
+    }
+
+    /* .services-header {
+        padding: 2vh 50px;
+    } */
+
+    .services-header h1 {
+        /* background-color: orange; */
+        color: white;
+        text-align: center;
+    }
+
+    .service-schedule {
+        padding: 12vh 50px;
+    }
+
+    .service-schedule h1 {
+        font-size: 38px;
+    }
+
+    .service-schedule button {
+        color: rgb(210, 243, 63);
+        background-color: rgb(0, 105, 0);
+        border: none;
+        padding: 10px 15px;
+        font-weight: bolder;
+        /* height: 40px; */
+        /* width: 320px; */
+        font-size: 16px;
+    }
+
+    .schedule-about {
+        padding: 15vh 50px;
+    }
+
+
+    .schedule-about {
+        /* background-color: rgb(251, 251, 251, 0.4); */
+        text-align: center;
+        color: rgb(0, 105, 0);
+    }
+
+    .schedule-about h1 {
+        /* background-color: orange; */
+        font-size: 46px;
+        padding-bottom: 10px;
+    }
+
+    .schedule-about p {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .schedule-about button {
+        padding: 10px;
+        width: auto;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .our-services {
+        padding: 15vh 50px;
+    }
+
+    .service {
+        text-align: center;
+        padding: 10px;
+    }
+
+
+    .our-promise {
+        padding: 50px;
+    }
+
+    .our-promise .text {
+        padding: 30px 20px;
+    }
+
+
+    .footer img {
+        width: 20px;
+    }
+
+
+    .footer .socials ul li {
+        padding: 0px 10px;
+    }
+
+}
