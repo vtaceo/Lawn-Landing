@@ -374,7 +374,6 @@ button:hover {
 }
 
 .consultation .consultation-text {
-    /* background-color: rgb(251, 251, 251, 0.4); */
     text-align: center;
     color: white;
 }
@@ -413,7 +412,6 @@ button:hover {
 }
 
 .consultation-contact .consultation-text {
-    /* background-color: rgb(251, 251, 251, 0.4); */
     text-align: center;
     color: white;
 }
@@ -442,9 +440,6 @@ button:hover {
 }
 
 
-
-
-
 /* HEADER */
 .headers {
     background-position: center;
@@ -460,7 +455,6 @@ button:hover {
     background-image: url(img/bg.jpg);
     color: white;
     text-align: center;
-    /* padding: 25vh 200px; */
 }
 
 
@@ -472,7 +466,6 @@ button:hover {
 }
 
 .contact-inner {
-    /* background-color: orange; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -480,7 +473,6 @@ button:hover {
 }
 
 .contact-inner .contact-text {
-    /* background-color: teal; */
     text-align: center;
     width: 40vw;
     padding-bottom: 30px;
@@ -488,14 +480,12 @@ button:hover {
 }
 
 .contact-inner .form form {
-    /* background-color: green; */
     display: flex;
     flex-direction: column;
     width: 40vw;
 }
 
 .contact-inner input {
-    /* background-color: palegoldenrod; */
     margin-bottom: 10px;
     padding: 10px 5px;
 }
@@ -535,7 +525,6 @@ button:hover {
     font-size: 18px;
 }
 
-
 .workers {
     padding: 0vh 100px;
     display: flex;
@@ -544,7 +533,6 @@ button:hover {
 
 .worker {
     display: flex;
-    /* background-color: rgb(255, 168, 7, 0.15); */
     align-items: center;
     padding-bottom: 60px;
 }
@@ -557,7 +545,6 @@ button:hover {
     width: 350px;
     height: 350px;
     object-fit: cover;
-    /* border-radius: 50%; */
 }
 
 .worker .bio h1 {
@@ -570,18 +557,12 @@ button:hover {
     font-size: 18px;
 }
 
-
 .schedule-about {
     background-color: rgb(210, 243, 63);
-    /* background-position: center;
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-color: rgb(0, 0, 0, .6); */
     padding: 15vh 200px;
 }
 
 .schedule-about {
-    /* background-color: rgb(251, 251, 251, 0.4); */
     text-align: center;
     color: rgb(0, 105, 0);
 }
@@ -620,7 +601,6 @@ button:hover {
 
 .all-services {
     background-color: white;
-    /* background-color: orange; */
 }
 
 .our-services {
@@ -668,7 +648,6 @@ button:hover {
 }
 
 .service-schedule {
-    /* background-color: rgb(251, 251, 251, 0.4); */
     text-align: center;
     color: rgb(0, 105, 0);
 }
@@ -689,8 +668,6 @@ button:hover {
     border: none;
     padding: 15px;
     font-weight: bolder;
-    /* height: 40px; */
-    /* width: 320px; */
     font-size: 18px;
 }
 
@@ -717,7 +694,6 @@ button:hover {
 }
 
 .footer .socials ul {
-    /* background-color: firebrick; */
     display: flex;
     list-style: none;
     padding-bottom: 10px;
@@ -733,7 +709,40 @@ button:hover {
 
 /* index */
 
-@media screen and (max-width: 1600px) {}
+
+@media screen and (min-width: 1600px) {
+    .landing {
+        background-image: url(img/bg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: rgb(0, 0, 0, .6);
+        padding: 100px 200px;
+        color: white;
+    }
+
+    .hero {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .how-we-care .our-services {
+        display: flex;
+        width: 100vw;
+        padding-top: 50px;
+        height: auto;
+    }
+
+    .how-we-care .our-services .service {
+        padding: 0px;
+        margin: 0px;
+        gap: 0px;
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 1400px) {
     .text {
@@ -747,6 +756,7 @@ button:hover {
     .history-landing-text {
         width: 60%;
     }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -925,6 +935,23 @@ button:hover {
 }
 
 @media screen and (max-width: 960px) {
+
+    nav {
+        position: sticky;
+    }
+
+    nav .links li {
+        list-style: none;
+        margin: 0 0px 0 0;
+        border-bottom: 2px solid transparent;
+    }
+
+    .links button {
+        padding: 15px 20px;
+        border: none;
+        font-size: 14px;
+    }
+
     .hero {
         display: flex;
         flex-direction: column;
@@ -1179,6 +1206,7 @@ button:hover {
 
 
 @media screen and (max-width: 768px) {
+
     .landing {
         padding: 40px 50px;
     }
@@ -1257,7 +1285,6 @@ button:hover {
         font-size: 20px;
         font-weight: bold;
         color: rgb(0, 105, 0);
-
     }
 
     .how-we-care .our-services .service p {
@@ -1276,7 +1303,6 @@ button:hover {
 
 
     .consultation .consultation-text {
-        /* background-color: rgb(251, 251, 251, 0.4); */
         text-align: center;
         color: white;
         padding: 50px 0px;
@@ -1292,14 +1318,12 @@ button:hover {
     }
 
     .contact-inner .contact-text {
-        /* background-color: teal; */
         text-align: center;
         width: 80vw;
         line-height: 30px;
     }
 
     .contact-inner .form form {
-        /* background-color: green; */
         display: flex;
         flex-direction: column;
         width: 80vw;
@@ -1325,25 +1349,20 @@ button:hover {
         line-height: 30px;
     }
 
-
     .workers {
         padding: 1vh 25px;
     }
 
     .worker {
-        /* text-align: center; */
         display: block;
-        /* background-color: rgb(255, 168, 7, 0.15); */
         align-items: center;
         padding-bottom: 60px;
     }
-
 
     .worker img {
         width: 250px;
         height: 250px;
     }
-
 
     .worker .bio h1 {
         font-size: 36px;
@@ -1354,12 +1373,7 @@ button:hover {
         line-height: 30px;
     }
 
-    /* .services-header {
-        padding: 2vh 50px;
-    } */
-
     .services-header h1 {
-        /* background-color: orange; */
         color: white;
         text-align: center;
     }
@@ -1378,8 +1392,6 @@ button:hover {
         border: none;
         padding: 10px 15px;
         font-weight: bolder;
-        /* height: 40px; */
-        /* width: 320px; */
         font-size: 16px;
     }
 
@@ -1389,13 +1401,11 @@ button:hover {
 
 
     .schedule-about {
-        /* background-color: rgb(251, 251, 251, 0.4); */
         text-align: center;
         color: rgb(0, 105, 0);
     }
 
     .schedule-about h1 {
-        /* background-color: orange; */
         font-size: 46px;
         padding-bottom: 10px;
     }
@@ -1427,7 +1437,6 @@ button:hover {
     }
 
     .our-promise .text {
-        /* padding: 30px 20px; */
         padding: 30px;
     }
 
@@ -1439,6 +1448,41 @@ button:hover {
 
     .footer .socials ul li {
         padding: 0px 10px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .text h1 {
+        font-size: 30px;
+        word-wrap: normal;
+    }
+
+    .text button {
+        color: rgb(0, 105, 0);
+        background-color: rgb(210, 243, 63);
+        border: none;
+        padding: 10px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .consultation .consultation-text button {
+        color: rgb(0, 105, 0);
+        background-color: rgb(210, 243, 63);
+        border: none;
+        padding: 10px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .history-landing-text button {
+        margin-top: 10px;
+        border: none;
+        padding: 10px;
+        height: auto;
+        width: 100%;
+        font-size: 18px;
     }
 
 }
